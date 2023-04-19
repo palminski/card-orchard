@@ -1,4 +1,4 @@
-function allCards() {
+function AllCards() {
     return (
         <>
         <h1>allCards Page</h1>
@@ -6,4 +6,4 @@ function allCards() {
     )
 }
 
-export default allCards;
+export default AllCards;

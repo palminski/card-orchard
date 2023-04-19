@@ -1,4 +1,4 @@
-function card() {
+function Card() {
     return (
         <>
         <h1>card Page</h1>
@@ -6,4 +6,4 @@ function card() {
     )
 }
 
-export default card;
+export default Card;

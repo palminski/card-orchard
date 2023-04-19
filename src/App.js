@@ -1,18 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
-import allCards from './pages/allCards';
-import card from './pages/card';
-import home from './pages/home';
+
+import Home from './pages/Home';
+import Card from './pages/Card';
+import AllCards from './pages/AllCards';
+import NotFound from './pages/NotFound';
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Orchard Cards</h1>
+    <Router>
+      <div className="App">
+        <h1>Orchard Cards</h1>
 
-      <p>By Will</p>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/all-cards" element={<AllCards />}></Route>
+          <Route path="/card/*" element={<Card />}></Route>
+          <Route path="*" element={<NotFound/>}></Route>
+        </Routes>
 
-    </div>
+        
+
+      </div>
+    </Router>
+
   );
 }
 
