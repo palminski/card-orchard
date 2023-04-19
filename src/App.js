@@ -6,11 +6,11 @@ import Card from './pages/Card';
 import AllCards from './pages/AllCards';
 import NotFound from './pages/NotFound';
 
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, HashRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <div className="App">
         <h1>Orchard Cards</h1>
 
@@ -32,7 +32,7 @@ function App() {
         
 
       </div>
-    </Router>
+    </HashRouter>
 
   );
 }
