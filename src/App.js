@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 
+import Nav from './components/Nav';
+
 import Home from './pages/Home';
 import Card from './pages/Card';
 import AllCards from './pages/AllCards';
@@ -12,12 +14,7 @@ function App() {
   return (
     
       <div className="App">
-        <h1>Orchard Cards</h1>
-
-        <Link to="/"><h3>home</h3></Link>
-        <Link to="/all-cards"><h3>all cards</h3></Link>
-        <Link to="/card"><h3>card</h3></Link>
-        <Link to={"/card/"+"CARDNAME-TESTID-00000000"}><h3>test link</h3></Link>
+        <Nav />
 
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
