@@ -30,7 +30,7 @@ function App() {
         </div>
 
 
-        <div id='footer' className='bg-dark'>  </div>
+        <div id='footer' className='bg-dark'>Made by William Bolls</div>
       </div>
 
 
