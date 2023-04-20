@@ -11,18 +11,20 @@ function Nav() {
 
             <div className='collapse navbar-collapse' id='navbarSupportedContent'>
                 <ul className='navbar-nav ms-auto' >
-                <li className='nav-item active'>
-                        <Link to="/all-cards" className='nav-link'><h5>Cards</h5></Link>
+                    <li className='nav-item active'>
+                        <Link to="/all-cards" className='nav-link'><h5>All Cards</h5></Link>
                     </li>
                     <li className='nav-item active'>
-                        <Link to="/card" className='nav-link'><h5>Card</h5></Link>
+                        <Link to="/card" className='nav-link'><h5>Find a Card</h5></Link>
                     </li>
                     <li className='nav-item active'>
                         <Link to={"/card/" + "CARDNAME-TESTID-00000000"} className='nav-link'><h5>Card Page Demo</h5></Link>
                     </li>
+
                 </ul>
+
             </div>
-            
+
         </nav>
     )
 }
