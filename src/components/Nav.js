@@ -18,7 +18,7 @@ function Nav() {
                         <Link to="/card" className='nav-link'><h5>Find a Card</h5></Link>
                     </li>
                     <li className='nav-item active'>
-                        <Link to={"/card/" + "CARDNAME-TESTID-00000000"} className='nav-link'><h5>Card Page Demo</h5></Link>
+                        <Link to={"/card/" + "00001"} className='nav-link'><h5>Card Page Demo</h5></Link>
                     </li>
 
                 </ul>
