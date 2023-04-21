@@ -16,17 +16,20 @@ function Card() {
     }
 
     return (
-        <>
+        <div className="container">
 
             {cardId ?
                 <>
                     {card ?
                         <>
+                        <br/>
                             <h2>{card.name}</h2>
-                            <h4>card id: {card.id}</h4>
-                            <img src={front ? card.frontImage : card.backImage} onClick={toggleSide}></img>
+                            <h4>{card.setName} - {card.setNumber}</h4>
+                            <hr/>
+                            <img className="trading-card" src={front ? card.frontImage : card.backImage} onClick={toggleSide}></img>
+                            <hr/>
                             
-                            <h4>Description</h4>
+                            <h4>card id: {card.id}</h4>
                         </>
                         :
                         <>
@@ -43,7 +46,7 @@ function Card() {
                 </>
             }
 
-        </>
+        </div>
     )
 }
 
